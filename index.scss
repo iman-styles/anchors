@@ -1,0 +1,73 @@
+// Anchor styles are applied via classes
+//
+
+.anchor {
+	&, &:active, &:hover {
+		@include improve-text-rendering;
+	}
+}
+
+.anchor-1 {
+	@extend .anchor;
+	&, &:active {
+		color: #006da4;
+		text-decoration: underline;
+	}
+	&:hover {
+		color: lighten(#006da4, 10%);
+	}
+}
+
+.anchor-2 {
+	@extend .anchor;
+	&, &:active {
+		color: #666;
+	}
+	&:hover {
+		color: lighten(#006da4, 10%);
+	}
+}
+
+.anchor-3 {
+	@extend .anchor;
+	&, &:active {
+		color: $grey-dark;
+	}
+	&:hover {
+		color: $grey-darkest;
+	}
+}
+
+.anchor-4 {
+	@extend .anchor;
+	&, &:active, &:hover {
+		color: $white;
+	}
+}
+
+.anchor-5 {
+	@extend .anchor;
+	&, &:active {
+		color: #bbb;
+	}
+	&:hover {
+		color: #888;
+	}
+}
+
+.edit-details-url {
+	border: 1px solid #eeeeee;
+	background: #eee;
+	text-transform: uppercase;
+	padding: 15px;
+
+	a {
+		@extend .anchor-5;
+		font-size: 12px;
+		text-decoration: none;
+	}
+
+	a:hover i {
+		background-position: 0 -16px;
+	}
+}
