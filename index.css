@@ -1,0 +1,68 @@
+.anchor,
+.anchor-1,
+.anchor-2,
+.anchor-3,
+.anchor-4,
+.anchor-5,
+.edit-details-url a {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+.anchor-1,
+.anchor-1:active {
+  color: #006da4;
+  text-decoration: underline;
+}
+.anchor-1:hover {
+  color: #008fd7;
+}
+
+.anchor-2,
+.anchor-2:active {
+  color: #666;
+}
+.anchor-2:hover {
+  color: #008fd7;
+}
+
+.anchor-3,
+.anchor-3:active {
+  color: #888888;
+}
+.anchor-3:hover {
+  color: #444444;
+}
+
+.anchor-4,
+.anchor-4:active,
+.anchor-4:hover {
+  color: white;
+}
+
+.anchor-5,
+.anchor-5:active {
+  color: #bbb;
+}
+.anchor-5:hover {
+  color: #888;
+}
+
+.edit-details-url {
+  border: 1px solid #eeeeee;
+  background: #eee;
+  text-transform: uppercase;
+  padding: 15px;
+}
+.edit-details-url a {
+  color: #bbb;
+  font-size: 12px;
+  text-decoration: none;
+}
+.edit-details-url a:hover i {
+  background-position: 0 -16px;
+  color: #888;
+}
+.edit-details-url a:active {
+  color: #bbb;
+}
